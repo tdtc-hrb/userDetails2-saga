@@ -39,10 +39,13 @@ npm install --save-dev parcel
 ```
 
 
-## Code
-- [reactdom](https://codemod.com/registry/react-19-replace-reactdom-render)
+## Performance
+- [Replacing render with createRoot](https://github.com/reactwg/react-18/discussions/5)    
+This improvement is mainly to reduce the interference of CallBack on performance;
+For hydration, debugging CallBack has no effect!
 
-### dom render
+
+### [dom render](https://codemod.com/registry/react-19-replace-reactdom-render)
 - Before
 ```
 import ReactDom from "react-dom";
@@ -65,7 +68,7 @@ root.render(<Provider store={store}>
     </Provider>);
 ```
 
-## html
+## Web Page
 - public url
 - javascript
 
